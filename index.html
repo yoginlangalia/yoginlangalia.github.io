@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================
+       BASIC META TAGS
+  ========================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- =========================
+       TAILWIND CSS CDN
+  ========================== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- =========================
+       GOOGLE FONTS
+       (Change to Poppins if you prefer)
+  ========================== -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- =========================
+       FONT AWESOME CDN
+  ========================== -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- =========================
+       CUSTOM TAILWIND CONFIG
+  ========================== -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            bgDark: '#0f0f14',
+            cardDark: 'rgba(255,255,255,0.08)',
+            accent: '#7c7cff', // Electric blue / purple
+          },
+          backdropBlur: {
+            xs: '2px',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-bgDark text-gray-200 font-sans scroll-smooth">
+
+  <!-- =========================
+       STICKY NAVBAR
+  ========================== -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-bgDark/80 backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- EDIT: Your Name -->
+      <span class="text-lg font-semibold text-white">Yogin Langalia</span>
+
+      <div class="hidden md:flex gap-6 text-sm">
+        <a href="#projects" class="hover:text-accent">Projects</a>
+        <a href="#skills" class="hover:text-accent">Skills</a>
+        <a href="#certifications" class="hover:text-accent">Certificates</a>
+        <a href="#education" class="hover:text-accent">Education</a>
+        <a href="#contact" class="hover:text-accent">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <!-- EDIT: Your Name -->
+      <h1 class="text-4xl md:text-5xl font-bold text-white">
+        Yogin Langalia
+      </h1>
+
+      <!-- EDIT: Your Title -->
+      <p class="mt-4 text-lg text-gray-400">
+        2nd Year IT Undergraduate @ D.J.Sanghvi College of Engineering <br> Machine Learning | Competitive Programming | Data Science
+      </p>
+
+      <!-- EDIT: Short intro -->
+      <p class="mt-6 max-w-2xl mx-auto text-gray-400">
+        Interested in Machine Learning and Problem-Solving.
+        Actively building projects and strengthening core CS fundamentals.
+      </p>
+
+      <!-- EDIT: Resume + Links -->
+      <div class="mt-8 flex justify-center gap-4 flex-wrap">
+        <a href="d:\desktop\Yogin\Resumes\Yogin Langalia Resume Updated (2).pdf" class="px-6 py-3 bg-accent text-black font-medium rounded-lg hover:scale-105 transition">
+          Download Resume
+        </a>
+        <a href="https://github.com/yoginlangalia" class="px-6 py-3 border border-white/20 rounded-lg hover:border-accent transition">
+          GitHub
+        </a>
+        <a href="www.linkedin.com/in/yogin-langalia" class="px-6 py-3 border border-white/20 rounded-lg hover:border-accent transition">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       QUICK SNAPSHOT
+  ========================== -->
+  <section class="px-6 pb-20">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+
+      <!-- CARD -->
+      <div class="bg-cardDark backdrop-blur-xs rounded-xl p-6 border border-white/10">
+        <h3 class="text-white font-semibold mb-2">Education</h3>
+        <!-- EDIT -->
+        <p class="text-gray-400 text-sm">B.Tech in Information Technology</p>
+        <p class="text-gray-500 text-sm">Dwarkadas J Sanghvi College of Engineering</p>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-cardDark backdrop-blur-xs rounded-xl p-6 border border-white/10">
+        <h3 class="text-white font-semibold mb-2">Core Skills</h3>
+        <!-- EDIT -->
+        <p class="text-gray-400 text-sm">Python, C++, Java</p>
+        <p class="text-gray-500 text-sm">DSA, DBMS, OS, OOP</p>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-cardDark backdrop-blur-xs rounded-xl p-6 border border-white/10">
+        <h3 class="text-white font-semibold mb-2">Highlights</h3>
+        <!-- EDIT -->
+        <p class="text-gray-400 text-sm">2 Projects Built</p>
+        <p class="text-gray-500 text-sm">50+ DSA Problems Solved</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       PROJECTS SECTION
+  ========================== -->
+  <section id="projects" class="px-6 pb-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-white mb-10">Featured Projects</h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- PROJECT CARD -->
+        <div class="bg-cardDark backdrop-blur-xs rounded-xl p-6 border border-white/10 hover:border-accent transition group">
+  <div class="mb-4 overflow-hidden rounded-lg bg-gray-800 aspect-video flex items-center justify-center">
+    <video 
+      src="c:\Users\HP\Videos\Captures\Mumbai House Price Predictor · Streamlit - Google Chrome 2025-12-23 10-00-14.mp4" 
+      class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+      autoplay 
+      muted 
+      loop 
+      poster="placeholder-image.jpg">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <h3 class="text-xl font-semibold text-white">Real Estate Price Prediction</h3>
+  <p class="mt-2 text-gray-400 text-sm">
+    The Concept: A Machine Learning tool that removes price uncertainty by providing instant, data-driven property valuations based on market trends and location data.
+  </p>
+
+  <p class="mt-4 text-gray-400 text-sm">
+    <span class="text-white font-medium">Tech Stack:</span>
+    Python, Pandas, Seaborn, Scikit-Learn, Streamlit
+  </p>
+
+  <ul class="mt-4 text-gray-400 text-sm list-disc list-inside">
+    <li>Data Science: Cleaned and processed 10k+ property listings using Pandas</li>
+    <li>ML Model: Built using Linear Regression and Lasso Regression with an 88% accuracy rate.</li>
+    <li>User Interface: Created an interactive dashboard where users input home features to get instant estimates.</li>
+  </ul>
+
+  <div class="mt-4 flex gap-4 text-sm">
+    <a href="#" class="text-accent hover:underline font-medium">GitHub</a>
+    <a href="#" class="text-accent hover:underline font-medium">Live Demo</a>
+  </div>
+</div>
+        <!-- DUPLICATE PROJECT CARD AS NEEDED -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       SKILLS SECTION
+  ========================== -->
+  <section id="skills" class="px-6 pb-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-white mb-8">Technical Skills</h2>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-400">
+        <!-- EDIT -->
+        <div>
+          <h4 class="text-white font-semibold mb-2">Languages</h4>
+          <p>Python, C, C++, Java</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-2">CS Fundamentals</h4>
+          <p>DSA, OOP, DBMS, OS, CN Basics</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-2">Machine Learning</h4>
+          <p>Regression, Model Evaluation, Feature Engineering</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-2">Tools</h4>
+          <p>Git, GitHub, Linux, MySQL, MongoDB</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+     CERTIFICATIONS SECTION
+========================== -->
+<section id="certifications" class="px-6 pb-20">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-white mb-8">Certifications</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Certification Card -->
+      <div class="bg-cardDark backdrop-blur-xs rounded-xl p-6 border border-white/10 hover:border-accent transition">
+        <div class="flex items-start gap-4">
+          <!-- Platform Logo -->
+          <img
+            src="https://cdn.simpleicons.org/coursera/ffffff"
+            alt="Coursera"
+            class="w-8 h-8"
+          />
+
+          <div>
+            <!-- EDIT -->
+            <h3 class="text-white font-semibold">
+              Machine Learning Specialization
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Coursera · Andrew Ng
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              Course: Supervised Machine Learning <br>
+              Topics: Regression, Classification, Model Evaluation
+            </p>
+
+            <!-- Credential Link -->
+            <a href="https://coursera.org/share/1a1b54d6f9067a508fdf40964ea0472f"
+               target="_blank"
+               class="inline-block mt-3 text-sm text-accent hover:underline">
+              View Credential
+            </a>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Add more certification cards as needed -->
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- =========================
+       EDUCATION SECTION
+  ========================== -->
+  <section id="education" class="px-6 pb-20">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-white mb-6">Education</h2>
+
+    <div class="space-y-6">
+      <!-- College 1 -->
+      <div class="bg-cardDark backdrop-blur-xs rounded-xl p-6 border border-white/10">
+        <h3 class="text-white font-semibold">
+          Dwarkadas J Sanghvi College of Engineering
+        </h3>
+        <p class="text-gray-400 text-sm">B.Tech in Information Technology</p>
+        <p class="text-gray-500 text-sm">2024 – Present</p>
+      </div>
+
+      <!-- College 2 -->
+      <div class="bg-cardDark backdrop-blur-xs rounded-xl p-6 border border-white/10">
+        <h3 class="text-white font-semibold">
+          Indian Institute of Technology – Madras (IITM)
+        </h3>
+        <p class="text-gray-400 text-sm">BS in Data Science (Online)</p>
+        <p class="text-gray-500 text-sm">2025 – Present</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- =========================
+     PROBLEM SOLVING SECTION
+========================== -->
+<section class="px-6 pb-20">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-white mb-6">Problem Solving</h2>
+
+    <p class="text-gray-400 mb-6">
+      Solved 100+ DSA problems focusing on arrays, strings, recursion, and basics of DP.
+    </p>
+
+    <!-- Coding Profiles -->
+    <div class="flex flex-wrap gap-6">
+
+  <!-- LeetCode -->
+  <a href="https://leetcode.com/u/YoginLangalia/"
+     target="_blank"
+     class="flex items-center gap-3 bg-cardDark border border-white/10 rounded-lg px-4 py-3 hover:border-accent hover:scale-105 transition">
+    <img src="https://cdn.simpleicons.org/leetcode/ffffff"
+         alt="LeetCode"
+         class="w-6 h-6">
+    <span class="text-gray-300">LeetCode</span>
+  </a>
+
+  <!-- Codeforces -->
+  <a href="https://codeforces.com/profile/yogin_langalia"
+     target="_blank"
+     class="flex items-center gap-3 bg-cardDark border border-white/10 rounded-lg px-4 py-3 hover:border-accent hover:scale-105 transition">
+    <img src="https://cdn.simpleicons.org/codeforces/ffffff"
+         alt="Codeforces"
+         class="w-6 h-6">
+    <span class="text-gray-300">Codeforces</span>
+  </a>
+
+  <!-- CodeChef -->
+  <a href="https://www.codechef.com/users/yogin5806"
+     target="_blank"
+     class="flex items-center gap-3 bg-cardDark border border-white/10 rounded-lg px-4 py-3 hover:border-accent hover:scale-105 transition">
+    <img src="https://cdn.simpleicons.org/codechef/ffffff"
+         alt="CodeChef"
+         class="w-6 h-6">
+    <span class="text-gray-300">CodeChef</span>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/yoginlangalia"
+     target="_blank"
+     class="flex items-center gap-3 bg-cardDark border border-white/10 rounded-lg px-4 py-3 hover:border-accent hover:scale-105 transition">
+    <i class="fab fa-github text-xl"></i>
+    <span class="text-gray-300">GitHub</span>
+  </a>
+
+</div>
+
+  </div>
+</section>
+
+  <!-- =========================
+       LEARNING & GROWTH
+  ========================== -->
+  <section class="px-6 pb-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-white mb-6">Learning & Growth</h2>
+
+      <!-- EDIT -->
+      <ul class="text-gray-400 list-disc list-inside space-y-2">
+        <li>Supervised Machine Learning </li>
+        <li>Dynamic Programming</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =========================
+       CONTACT SECTION
+  ========================== -->
+  <section id="contact" class="px-6 pb-32">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Get in Touch</h2>
+
+      <!-- EDIT -->
+      <p class="text-gray-400 mb-6">
+        Email: yoginlangalia@gmail.com
+        
+      </p>
+
+      <div class="flex justify-center gap-6 text-xl">
+        <a href="https://github.com/yoginlangalia" class="hover:text-accent"><i class="fab fa-github"></i></a>
+        <a href="www.linkedin.com/in/yogin-langalia" class="hover:text-accent"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
